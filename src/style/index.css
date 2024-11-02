@@ -1,0 +1,97 @@
+/* set the container of the bar */
+#bar-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+#bar {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* 设置阈值标记的样式 */
+.threshold {
+    width: 15px;
+    height: 40px;
+    background-color: #ff5722;
+    position: absolute;
+    top: -5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: left 0.2s ease;
+    white-space: nowrap;
+}
+/* show threshold label */
+.threshold .label-line1 {
+    position: absolute;
+    top: 45px; /* 调整与条带的垂直距离 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+    transition: top 0.2s ease, font-size 0.2s ease;
+}
+.threshold .label-line2 {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+    transition: top 0.2s ease, font-size 0.2s ease;
+}
+
+/* delete threshold button */
+.threshold .delete-btn {
+    position: absolute;
+    top: -10px; /* 在阈值标记的上方显示 */
+    right: -10px;
+    width: 16px;
+    height: 16px;
+    background-color: #f44336; /* 红色背景 */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* 默认隐藏 */
+    padding: 0;
+}
+.threshold:hover .delete-btn {
+    display: block;
+}
+
+/* 响应式设计示例 */
+@media (max-width: 600px) {
+    #bar-container {
+        width: 95%;
+    }
+    .label-line1,
+    .label-line2 {
+        font-size: 10px;
+    }
+
+    .threshold .label-line1 {
+        top: 35px;
+    }
+
+    .threshold .label-line2 {
+        top: 50px;
+    }
+
+    /* 调整删除按钮大小 */
+    .threshold .delete-btn {
+        width: 14px;
+        height: 14px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
