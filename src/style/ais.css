@@ -1,0 +1,86 @@
+.ais-card {
+  width: 80%;
+  margin: 30px auto;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 5px 0 #dcdade;
+  padding: 0 20px 20px;
+}
+
+.ais-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.65);
+  width: 140px;
+  color: rgba(0, 0, 0, 0.65);
+  transition: all 0.3s ease-in-out;
+}
+
+.ais-btn-sub {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 6px 16px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 1px;
+  border: none;
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.65);
+  transition: all 0.3s ease-in-out;
+}
+
+.ais-btn:hover {
+  box-shadow: 0 1px 6px 0 rgba(30, 83, 220, 0.6);
+}
+.ais-btn:active {
+  background-color: rgba(166,111,252,.6);
+}
+
+.ais-btn-sub:hover{
+  box-shadow: 0 1px 6px 0 rgba(30, 83, 220, 0.6);
+}
+.ais-btn-sub:active{
+  background-color: rgba(166,111,252,.6);
+}
+
+.report-card {
+  width: 80%;
+  margin: 30px auto;
+  position: relative;
+  background: #fff;
+  /* box-shadow: 0 0 5px 0 #dcdade; */
+  padding: 0 20px 20px;
+}
+.report-card .delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #f44336; /* 红色背景 */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.report-card .delete-btn:hover {
+  opacity: 1;
+}
