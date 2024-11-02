@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Thresholds 可拖动条带</title>
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="./src/style/ais.css">
+    <link rel="stylesheet" href="./src/style/table.css">
+</head>
+<body>
+    <div id="bar-container">
+        <div id="bar">
+            <!-- 阈值标记将动态添加到这里 -->
+        </div>
+    </div>
+
+    <div id="opeator", class="ais-card">
+        
+        <button id="add-threshold" class="ais-btn">添加阈值</button>
+        <button id="add-report" class="ais-btn">添加报表</button>
+    </div>
+
+    <!-- 报表容器的父元素 -->
+    <div id="report-container">
+        
+    </div>
+    <!-- 引用外部 JavaScript 文件 -->
+    <script src="./src/assets/data.js"></script>
+    <script src="./src/app/index.js"></script>
+</body>
+</html>
